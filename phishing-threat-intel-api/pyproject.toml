@@ -1,0 +1,13 @@
+[project]
+name = "phishing-threat-intel-api"
+version = "1.0.0"
+description = "Real-time phishing URL collection and threat-intelligence REST API"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = [
+    "ignore::DeprecationWarning:apscheduler.*",
+    "ignore:Using `httpx` with `starlette.testclient`",
+]
